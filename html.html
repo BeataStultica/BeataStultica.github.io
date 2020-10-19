@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ремонти квартир</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<!--        <button class = "show_menu">=</button> -->
+        <div class = "menu1">
+            <button class = "menu_el">Про нас</button>
+            <button class = "menu_el">Послуги</button>
+            <button class = "menu_el">Ціни</button>
+            <button class = "menu_el">Портфоліо</button>
+            <button class = "menu_el">Відгуки</button>
+            <button class = "menu_el">Контакти</button>
+        </div>
+        <header>
+            <h1><span style="color:red;">Ремонт</span> квартир <span style="color: red">Тернопіль</span></h1>
+            <h2 id = 'subtitle' >Берем на себе ремонт в новобудові,<br>
+                а також капітальні і косметичні ремонти<br>
+                в будь якій квартирі Києва</h2>
+        </header>
+        <div class="nav-toggle">
+            <div class="nav-toggle-bar"></div>
+        </div>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#first">Наші послуги</a></li>
+              <li><a class="menu__item" href="#second">Чому саме ми?</a></li>
+              <li><a class="menu__item" href="#third">Приклади інтерєрів</a></li>
+              <li><a class="menu__item" href="#four">Наші послуги</a></li>
+              <li><a class="menu__item" href="#cont">Контакти</a></li>
+            </ul>
+        </div>
+
+        <main>
+        <div class = "stick" id = 'first'>Наші послуги</div>
+        <div class = "image_text">
+            <img src='image/rem.png' alt = 'Not found' class = 'round'>
+            <img src='image/bud.jpg' alt = 'Not found' class = 'round'>
+            <img src='image/dis.jpg' alt = 'Not found' class = 'round'>
+            <p>Ремонт</p>
+            <p>Будівництво</p>
+            <p>Дизайн</p>
+        </div>
+        <div class = "stick" id = 'second'>Чому саме ми?</div>
+        <div class = 'list'>
+        <ul class="we">
+            <li>Надійно <span>заключаємо офіційні договора з клієнтами</span></li>
+            <li>Вигідно <span>раціонально розраховуємо бюджет і матеріали</span></li>
+            <li>Професійно <span>в нашій команді майстера зі стажем від 7 років</span></li>
+            <li>Без затримок <span>здаємо готову роботу без відхилень від графіка</span></li>
+            <li>Ввічливо <span>наш персонал і майстера завжди раді вас бачити</span></li>
+        </ul>
+        </div>
+        <div class = "stick" id = 'third'>Приклади інтерєрів</div>
+        <div class = 'exmpl'>
+            <p>SONYACHNA BRAMA<br>Елегантний, вивірений і строгий інтер'єр, 
+                в якому <br> головна роль відведена функції, а не зовнішньому лиску.<br>
+                Однак, незважаючи на стриманість в оформленні,<br> квартира не виглядає аскетичною.
+                 Навпаки, завдяки <br>застосуванню теплих природних матеріалів та оригінальної <br>обробці - вона вийшла по-домашньому затишною</p>
+            <img src='image/son.jpg' alt = 'Not found' class = 'ex_im'>
+            <img src='image/achm.jpg' alt = 'Not found' class = 'ex_im'>
+            <p>AKHMATOW<br>Дизайн двоповерхової квартири в сучасному стилі.<br>
+                Перший поверх являє собою відкритий простір,<br>
+                умовно зонірованноє на кухню, обідню зону,<br>
+                вітальню. Другий поверх займають спальня для<br>
+                батьків, дитяча і гардероб. Всі задумки по <br>
+                дизайну планується реалізувати за допомогою<br>
+                італійських предметів інтер'єру і індивідуально<br>
+                спроектованої корпусних меблів. Дизайн проект<br> 
+                отримав срібну місце на конкурсі</p>
+            <p>SHERWOOD<br>
+                Строгий інтер'єр виконаний з дотриманням чітких<br>
+                правил естетики мінімалізму. Використання <br>
+                функціональних предметів, застосування геометричних<br>
+                форм і базових квітів, раціональне використання площі,<br>
+                не перевантаженою зайвими деталями і розсіяне освітлення,<br>
+                що додає простору закінчений вигляд - ідеально підійде <br>
+                для тих, хто віддає перевагу комфорту і елегантною простоті.</p>
+            <img src='image/sher.jpg' alt = 'Not found' class = 'ex_im'>
+        </div>
+        <div class = "stick" id = 'four'>Наші послуги</div>
+        <nav class ='filter'>
+            <ul>
+                <li><input type="text" id = 'search' placeholder = 'введіть ключове слово'></li>
+                <li><a>Фільтр</a>
+                    <ul>
+                        <li><input type="checkbox">інтерєр</li>
+                        <li><input type="checkbox">екстерєр</li>
+                        <li><input type="checkbox">ремонті роботи</li>
+                        <li><input type="checkbox">будівництво</li>
+                    </ul>
+                </li>
+                <li id = 'sort'><a>Сортувати</a>
+                    <ul>
+                        <li><input type="radio" name = 'sort'>за часом</li>
+                        <li><input type="radio" name = 'sort'>за вартістю</li>
+                        <li><input type="radio" name = 'sort'>за популярністю</li>
+                        <li><input type="radio" name = 'sort'>по алфавіту</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class ='price'>
+            <div class = 'servis'>
+                <p>Пакет МІНІ</p>
+                <p>Розділ: інтерєр</p>
+                <img src='image/mini.jpg' alt = 'Not found' class = 'serv_im'>
+                <p>Ціна: <span>450 грн/м<sup>2</sup></span></p>
+                <button>Детальніше</button>
+            </div>
+            <div class = 'servis'>
+                <p>Пакет Стандарт</p>
+                <p>Розділ: інтерєр</p>
+                <img src='image/standar.jpg' alt = 'Not found' class = 'serv_im'>
+                <p>Ціна: <span>850 грн/м<sup>2</sup></span></p>
+                <button>Детальніше</button>
+            </div>
+            <div class = 'servis'>
+                <p>Пакет Все включено</p>
+                <p>Розділ: інтерєр</p>
+                <img src='image/alli.jpg' alt = 'Not found' class = 'serv_im'>
+                <p>Ціна: <span>1150 грн/м<sup>2</sup></span></p>
+                <button>Детальніше</button>
+            </div>
+            <div class = 'servis'>
+                <p>Установка плитки</p>
+                <p>Розділ: ремонті роботи</p>
+                <img src='image/pl.jpg' alt = 'Not found' class = 'serv_im'>
+                <p>Ціна: <span>300 грн/м<sup>2</sup></span></p>
+                <button>Детальніше</button>
+            </div>
+            <div class = 'servis'>
+                <p>Чорнова кладка цегли</p>
+                <p>Розділ: будівництво</p>
+                <img src='image/ceg.jfif' alt = 'Not found' class = 'serv_im'>
+                <p>Ціна: <span>3 грн/шт</span></p>
+                <button>Детальніше</button>
+            </div>
+            <div class = 'servis'>
+                <p>Ландшафтний дизайн</p>
+                <p>Розділ: екстерєр</p>
+                <img src='image/land.jfif' alt = 'Not found' class = 'serv_im'>
+                <p>Ціна: <span>від 1500 грн/м<sup>2</sup></span></p>
+                <button>Детальніше</button>
+            </div>
+        </div>
+        <div class = 'num'>
+            <p id = 'cont'>
+                Контакти:<br>
+                +380-67-111-1111<br>
+                +380-95-222-2222<br>
+                електронна пошта:<br>
+                poshta123@gmail.com</p>
+            <p>Наша адреса: Україна,<br> м.Тернопіль, вулиця Вулиця 5А, <br>оф.5, індекс 46001</p>
+            <ul class="social">
+                <li>Соціальні мережі:</li>
+                
+                <li><a class="social_item" href = 'youtube.com/channel/UCgiVOBYz4fNlGWLfYq5Vdow/about?view_as=subscriber'>Youtube</a></li>
+                <li><a class="social_item" href = 'facebook.com'>Facebook</a></li>
+                <li><a class="social_item" href = 'twitter.com'>Twitter</a></li>
+                
+              </ul>
+        </div>
+        <hr>
+        </main>
+    </body>
+</html>
